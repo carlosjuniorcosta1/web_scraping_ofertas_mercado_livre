@@ -84,5 +84,22 @@ df_parcelado['valor_parcela'] = df_parcelado['preco'] / df_parcelado['parcelas_s
 df_parcelado['valor_parcela'] = df_parcelado['valor_parcela'].round(2)
 
 
-df2.to_excel('df_ofertas_ml.xlsx')
-df2.to_csv('df_ofertas_ml.csv')
+df2.to_excel('exemplo_ofertas_mercado_livre_27_marco_2022.xlsx')
+df2.to_csv('exemplo_ofertas_mercado_livre_27_marco_2022.csv')
+
+
+js = df2.to_json(orient = 'columns')
+
+df2.to_json('estoque_mercado_livre.json', orient = 'table')
+
+
+
+
+
+
+
+
+
+
+
+
